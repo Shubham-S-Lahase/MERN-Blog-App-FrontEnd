@@ -1,0 +1,31 @@
+.footer-conatiner{
+    display: flex;
+    flex-direction: column;
+}
+
+.icons-holder{
+    background: #262626;
+}
+.icons{
+    margin-left: 35vw;
+}
+.icons img{
+    width: 30px;
+    margin-left: 3vw;
+}
+.copyright{
+    background-color:whitesmoke;
+    font-size: small;
+    font-weight: bold;
+    color: black;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright span{
+    padding-left: 10px;
+    padding-right: 10px;
+}

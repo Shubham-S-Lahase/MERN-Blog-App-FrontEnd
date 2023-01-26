@@ -1,0 +1,28 @@
+
+.heading h1{
+    text-align: center;
+    font-size:50px;
+    animation: changeTxtColor 5s infinite alternate linear;
+}
+
+.heading h1:hover{
+    text-decoration:underline;
+}
+
+@keyframes changeTxtColor{
+    0%{
+        color:darkblue;
+    }
+    25%{
+        color:cornflowerblue;
+    }
+    50%{
+        color:darkmagenta;
+    }
+    75%{
+        color:darkorchid;
+    }
+    100%{
+        color:deepskyblue;
+    }
+  }

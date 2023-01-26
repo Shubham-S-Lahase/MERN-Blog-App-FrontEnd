@@ -1,0 +1,36 @@
+.login {
+  width: 35vw;
+  border: 1px solid black;
+  margin: 5vh auto;
+  background: url("https://images.pexels.com/photos/7546295/pexels-photo-7546295.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: contain;
+}
+.login h1 {
+  text-align: center;
+  color: aliceblue;
+}
+.login form {
+  display: flex;
+  flex-direction: column;
+}
+.login input, button{
+    width: 50%;
+    height: 4vh;
+    margin: 2vh auto;
+}
+.login input{
+    font-size: large;
+    border-bottom: 5px solid rgb(134, 133, 109);
+    color: azure;
+    font-weight: bold;
+    background: transparent;
+}
+.login button{
+    font-size: larger;
+    font-weight: bolder;
+    background:transparent;
+    color: aqua;
+   border: none;
+    border-bottom: 2px solid yellow;
+}
+

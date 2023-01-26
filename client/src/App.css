@@ -1,0 +1,45 @@
+.container {  display: grid;
+    grid-template-columns: 0.4fr 1.6fr;
+    grid-template-rows: 0.4fr 2.4fr 0.2fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Header Header"
+      "Aside Blogs"
+      "Footer Footer";
+      height: 100vh;
+  }
+  
+.Footer { 
+    grid-area: Footer;
+    border: 1px solid black;
+}
+  
+.Aside { 
+    grid-area: Aside;
+    border: 1px solid black;
+}
+  
+.Header { 
+    grid-area: Header; 
+    border: 1px solid black;
+    animation: animateBg 5s linear infinite;
+    background-image: linear-gradient(90deg,#42095a,#5a3656,#1b8de4,#42095a,#5a3656);
+    background-size: 400% 100%;
+}
+
+@keyframes animateBg {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 0%; }
+  }
+  
+  
+.Blogs { 
+    grid-area: Blogs;
+  
+}
+
+
+ 
+
