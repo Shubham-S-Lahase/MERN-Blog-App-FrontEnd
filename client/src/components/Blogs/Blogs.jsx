@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Blogs.css";
 
 const Blogs = () => {
@@ -19,7 +18,7 @@ const Blogs = () => {
               its design platform
             </h2>
             <p className="info">
-              <a className="author">Shubham Lahase</a>
+              {/* <a className="author">Shubham Lahase</a> */}
               <time>2023/01/26 17:53</time>
             </p>
             <p className="summary">
@@ -44,7 +43,7 @@ const Blogs = () => {
               its design platform
             </h2>
             <p className="info">
-              <a className="author">Shubham Lahase</a>
+              {/* <a className="author">Shubham Lahase</a> */}
               <time>2023/01/26 17:53</time>
             </p>
             <p className="summary">
@@ -69,7 +68,7 @@ const Blogs = () => {
               its design platform
             </h2>
             <p className="info">
-              <a className="author">Shubham Lahase</a>
+              {/* <a className="author">Shubham Lahase</a> */}
               <time>2023/01/26 17:53</time>
             </p>
             <p className="summary">

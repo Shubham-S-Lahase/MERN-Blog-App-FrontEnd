@@ -33,4 +33,10 @@
    border: none;
     border-bottom: 2px solid yellow;
 }
+.login h3{
+  text-align: center;
+  font-size: large;
+  font-weight: 100;
+  color: aqua;
+}
 
