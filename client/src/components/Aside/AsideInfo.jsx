@@ -10,7 +10,7 @@ const AsideInfo = () => {
                     <p className="p1">
                         <b>Live in curiosity!</b>
                     </p>
-                    {/* <img src={require('./Blogo.jpg')} alt="app-logo"/> */}
+                    <img src={require('./Blogo.png')} alt="app-logo"/>
                     <p className="p2">Discover stories, thinking, and expertise from writers on any topic.</p>
                 </div>
                 <div className="flip-card-back">
