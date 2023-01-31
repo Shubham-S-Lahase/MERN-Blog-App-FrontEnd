@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import Welcome from "./components/Welcome/Welcome";
 import Header from "./components/Header/Header";
 import NavBar from "./components/NavigationBar/NavBar";
 import AsideInfo from "./components/Aside/AsideInfo";
@@ -21,9 +22,10 @@ function App() {
       <div className="Blogs">
         <NavBar />
         <Routes>
-            <Route index path="/" element={ <Blogs/> } />
+            <Route index path="/" element={ <Welcome/> } />
             <Route path="/Register" element={ <RegisterForm/> } />
             <Route path="/Login" element={ <LoginForm/> } />
+            <Route path="/Home" element={ <Blogs/> } />
         </Routes>
       </div>
       <div className="Footer">

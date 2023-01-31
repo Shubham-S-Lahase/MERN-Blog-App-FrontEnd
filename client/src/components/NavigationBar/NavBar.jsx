@@ -7,11 +7,12 @@ const NavBar = () => {
     <div className="nav">
       <nav>
         <li id="home">
-          <Link to="/">Home</Link>
+          <Link id="l0" to="/">Welcome</Link>
+          <Link id="l1" to="/Home">Home</Link>
         </li>
         <li id="signup">
-          <Link  id="l1" to="/Login">Login</Link>
-          <Link to="/Register">SignUp</Link>
+          <Link  id="l2" to="/Login">Login</Link>
+          <Link id="l3" to="/Register">SignUp</Link>
         </li>
       </nav>
     </div>

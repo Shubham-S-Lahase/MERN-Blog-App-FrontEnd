@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import "./RegisterForm.css";
 
 const RegisterForm = () => {
@@ -43,6 +43,7 @@ const RegisterForm = () => {
           />
           <button>Register</button>
         </form>
+        <h3>Already have an account??<Link style={{color: "yellow", paddingLeft: "10px"}} to='/Login'>Login here...</Link></h3>
       </div>
     </>
   );

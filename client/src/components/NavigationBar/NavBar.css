@@ -1,16 +1,12 @@
 .nav nav{
-    margin: 10px;
-    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
+    background-color: rgba(14, 3, 77, 0.868);
 }
 .nav li {
     list-style: none;
     font-size:x-large;
-}
-.nav li:hover{
-    text-shadow: 2px 2px 10px #22241f;
-    filter: dropshadow(color=#adfa08, offx=10, offy=10);
+    padding-bottom: 5px;
 }
 #home{
     margin-left: 15px;
@@ -20,10 +16,28 @@
    width: 200px;
 }
 
-#l1{
+#l0{
+    margin-right: 40px;
+}
+
+#l2{
     margin-right: 40px;
     margin-left: 15px;
 }
+
+#l0, #l1, #l2, #l3{
+    color: blanchedalmond;
+    text-decoration: none;
+}
+
+#l0:hover, #l1:hover, #l2:hover, #l3:hover{
+    text-decoration: underline;
+    color: chartreuse;
+}
+
+
+
+
 
 
 
