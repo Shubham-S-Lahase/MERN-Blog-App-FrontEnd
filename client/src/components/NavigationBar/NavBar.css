@@ -1,40 +1,32 @@
 .nav nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-direction: row;
     background-color: rgba(14, 3, 77, 0.868);
 }
 .nav li {
+    text-align: center;
+    display: inline;
     list-style: none;
     font-size:x-large;
-    padding-bottom: 5px;
-}
-#home{
-    margin-left: 15px;
-}
-#signup{
-    display: block;
-   width: 200px;
+   
 }
 
-#l0{
-    margin-right: 40px;
-}
-
-#l2{
-    margin-right: 40px;
-    margin-left: 15px;
-}
-
-#l0, #l1, #l2, #l3{
+#l0, #l1, #l2{
+    margin: 4.5vw;
     color: blanchedalmond;
     text-decoration: none;
 }
 
-#l0:hover, #l1:hover, #l2:hover, #l3:hover{
+#l0:hover, #l1:hover, #l2:hover{
     text-decoration: underline;
     color: chartreuse;
 }
-
+#usernamehead{
+    display: inline;
+    color: chartreuse;
+    padding-right: 0.5vw;
+}
 
 
 

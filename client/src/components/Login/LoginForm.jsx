@@ -1,11 +1,14 @@
 import React, { useState } from "react";
+import { useContext } from "react";
 import { Navigate, Link } from 'react-router-dom';
+import { UserContext } from "../UserContext";
 import "./LoginForm.css";
 
 const LoginForm = () => {
   const [username, setUserName] = useState("");
   const [password, setPassword] = useState("");
   const [redirect, setRedirect] = useState(false);
+  const {setUserInfo} = useContext(UserContext);
 
   const login = async (e) => {
     e.preventDefault();
@@ -16,14 +19,17 @@ const LoginForm = () => {
       credentials: 'include',  
     });
     if(response.ok) {
-      setRedirect(true);
+      response.json().then(userInfo => {
+        setUserInfo(userInfo);
+        setRedirect(true);  
+      });
     } else{
       alert('Incorrect Credentials~~Please enter Correct Credentials')
     }
   };
 
   if(redirect){
-    return <Navigate to={'/'} />
+    return <Navigate to={'/Home'} />
   }
 
   return (

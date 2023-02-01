@@ -1,10 +1,12 @@
 import React from "react";
+import NavBar from "../NavigationBar/NavBar";
 import "./Blogs.css";
 
 const Blogs = () => {
   return (
     <>
       <div className="blogs">
+        <NavBar/>
         <div className="post">
           <div className="image">
             <img

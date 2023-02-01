@@ -3,12 +3,12 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Welcome from "./components/Welcome/Welcome";
 import Header from "./components/Header/Header";
-import NavBar from "./components/NavigationBar/NavBar";
 import AsideInfo from "./components/Aside/AsideInfo";
 import Blogs from "./components/Blogs/Blogs";
 import RegisterForm from "./components/Register/RegisterForm";
 import LoginForm from "./components/Login/LoginForm";
 import Footer from "./components/Footer/Footer";
+import UserContextProvider from "./components/UserContext";
 
 function App() {
   return (
@@ -20,13 +20,14 @@ function App() {
         <AsideInfo />
       </div>
       <div className="Blogs">
-        <NavBar />
+        <UserContextProvider>
         <Routes>
             <Route index path="/" element={ <Welcome/> } />
             <Route path="/Register" element={ <RegisterForm/> } />
             <Route path="/Login" element={ <LoginForm/> } />
             <Route path="/Home" element={ <Blogs/> } />
         </Routes>
+        </UserContextProvider>
       </div>
       <div className="Footer">
         <Footer />
