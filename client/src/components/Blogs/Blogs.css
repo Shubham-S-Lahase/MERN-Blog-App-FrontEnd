@@ -5,37 +5,7 @@
     justify-content: center;
     align-items: center;
 }
-.post{
-    width: 80%;
-    background-color: aliceblue;
-    margin: 1vw;
-    display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
-    gap: 20px;
-    box-shadow: 5px 5px lightgrey;
-    border-radius: 20px;
-}
-.post img, h2, p{
-   width: 98%;
-   margin: 2%;
-}
 
-.post p {
-    font-size: large;
-}
-
-.info {
-    color: #888;
-    display: flex;
-    gap: 10px;
-}
-.info .author, time{
-    font-size: smaller;
-    font-weight: bolder;
-}
-.author{
-    color: black;
-}
 
 
 

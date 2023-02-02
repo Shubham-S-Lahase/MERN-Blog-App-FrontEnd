@@ -31,9 +31,9 @@ const NavBar = () => {
 
   return (
     <div className="nav">
-      <nav>
-        {username && (
-          <>
+      {username && (
+        <>
+          <nav>
             <li>
               <Link id="l0" to="/Home">
                 Home
@@ -46,13 +46,13 @@ const NavBar = () => {
             </li>
             <li>  
               <Link id="l2" to='/' onClick={logout}>
-                <h3 id="usernamehead"> ({username}) </h3>
+                    <h3 id="usernamehead"> ({username}) </h3>
                 Logout
               </Link>
             </li>
-          </>
-        )}
       </nav>
+        </>
+      )}
     </div>
   );
 };

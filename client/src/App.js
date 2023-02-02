@@ -9,6 +9,7 @@ import RegisterForm from "./components/Register/RegisterForm";
 import LoginForm from "./components/Login/LoginForm";
 import Footer from "./components/Footer/Footer";
 import UserContextProvider from "./components/UserContext";
+import CreatePost from "./components/CreatePost/CreatePost";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/Register" element={ <RegisterForm/> } />
             <Route path="/Login" element={ <LoginForm/> } />
             <Route path="/Home" element={ <Blogs/> } />
+            <Route path="/Create" element={ <CreatePost/> } />
         </Routes>
         </UserContextProvider>
       </div>
