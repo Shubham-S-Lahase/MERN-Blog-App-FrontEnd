@@ -4,21 +4,24 @@ import NavBar from "../NavigationBar/NavBar";
 import Post from "../Post/Post";
 import "./Blogs.css";
 
-
 const Blogs = () => {
+const [posts, setPosts] = useState([]);
 useEffect(() => {
-  fetch('http://localhost:4000/api/user/getPosts').then(response => {
+  fetch('http://localhost:4000/api/user/get-post').then(response => {
     response.json().then(posts => {
+      setPosts(posts);
       console.log(posts);
     });
   });
 }, []);
+
   return (
     <>
     <NavBar/>
       <div className="blogs">
-            <Post />
-            <Post />
+           {posts.length > 0 && posts.map(post => (
+            <Post key={post._id} {...post} />
+           ))}
       </div>
     </>
   );
