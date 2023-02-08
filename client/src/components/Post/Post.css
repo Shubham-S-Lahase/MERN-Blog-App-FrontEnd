@@ -29,3 +29,7 @@
 .author{
     color: black;
 }
+#viewPost{
+    text-decoration: none;
+    color: inherit;
+}
