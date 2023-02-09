@@ -33,3 +33,6 @@
     text-decoration: none;
     color: inherit;
 }
+.summary{
+    display:inline;
+}

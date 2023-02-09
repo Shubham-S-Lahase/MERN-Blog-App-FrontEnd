@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 const Post = ({_id,title, summary, cover, content, createdAt, author }) => {
   return (
     <div className="post">
-      <div className="image">
+      <div className="Image">
         <Link id="viewPost" to={`/post/${_id}`}>
           <img src={`http://localhost:4000/${cover}`} alt="post-image" />
         </Link>
       </div>
-      <div className="text">
+      <div className="Text">
         <Link id="viewPost" to={`/post/${_id}`}>
           <h2>{title}</h2>
         </Link>
