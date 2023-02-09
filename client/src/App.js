@@ -11,6 +11,7 @@ import Footer from "./components/Footer/Footer";
 import PostPage from "./components/PostPage/PostPage";
 import UserContextProvider from "./components/UserContext";
 import CreatePost from "./components/CreatePost/CreatePost";
+import EditPost from "./components/EditPost/EditPost";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path="/Home" element={ <Blogs/> } />
             <Route path="/Create" element={ <CreatePost/> } />
             <Route path="/post/:id" element={ <PostPage/> } />
+            <Route path="/edit/:id" element={ <EditPost/> } />
         </Routes>
         </UserContextProvider>
       </div>
