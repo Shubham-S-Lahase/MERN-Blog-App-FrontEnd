@@ -8,6 +8,7 @@ import Blogs from "./components/Blogs/Blogs";
 import RegisterForm from "./components/Register/RegisterForm";
 import LoginForm from "./components/Login/LoginForm";
 import Footer from "./components/Footer/Footer";
+import PostPage from "./components/PostPage/PostPage";
 import UserContextProvider from "./components/UserContext";
 import CreatePost from "./components/CreatePost/CreatePost";
 
@@ -28,6 +29,7 @@ function App() {
             <Route path="/Login" element={ <LoginForm/> } />
             <Route path="/Home" element={ <Blogs/> } />
             <Route path="/Create" element={ <CreatePost/> } />
+            <Route path="/post/:id" element={ <PostPage/> } />
         </Routes>
         </UserContextProvider>
       </div>
