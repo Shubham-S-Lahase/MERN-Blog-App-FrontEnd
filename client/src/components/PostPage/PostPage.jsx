@@ -13,7 +13,7 @@ const PostPage = () => {
   const { userInfo } = useContext(UserContext);
   const { id } = useParams();
   useEffect(() => {
-    fetch(`http://localhost:4000/api/user/post/${id}`).then((response) => {
+    fetch(`https://blogger-trigger-api.onrender.com/api/user/post/${id}`).then((response) => {
       response.json().then((postInfo) => {
         setPostInfo(postInfo);
       });

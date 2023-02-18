@@ -12,11 +12,11 @@ const LoginForm = () => {
 
   const login = async (e) => {
     e.preventDefault();
-    const response = await fetch('http://localhost:4000/api/user/Login', {
+    const response = await fetch('https://blogger-trigger-api.onrender.com/api/user/Login', {
       method: "POST",
       body: JSON.stringify({ username, password }),
       headers: { "Content-Type": "application/json" },
-      credentials: 'include',  
+      credentials: "include"  
     });
     if(response.ok) {
       response.json().then(userInfo => {

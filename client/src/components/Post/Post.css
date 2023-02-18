@@ -12,6 +12,9 @@
    width: 98%;
    margin: 2%;
 }
+.post h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 .post p {
     font-size: large;

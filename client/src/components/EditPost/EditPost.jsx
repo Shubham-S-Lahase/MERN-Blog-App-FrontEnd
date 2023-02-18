@@ -15,7 +15,7 @@ const EditPost = () => {
   const [redirect, setRedirect] = useState(false);
 
   useEffect(() => {
-    fetch(`http://localhost:4000/api/user/Post/${id}`).then((response) => {
+    fetch(`https://blogger-trigger-api.onrender.com/api/user/Post/${id}`).then((response) => {
       response.json().then((postInfo) => {
         console.log(postInfo);
         setTitle(postInfo.title);
@@ -35,7 +35,7 @@ const EditPost = () => {
         data.set("file", files?.[0]);
     }
     e.preventDefault();
-    const response = await fetch("http://localhost:4000/api/user/Post",{
+    const response = await fetch("https://blogger-trigger-api.onrender.com/api/user/Post",{
         method: 'PUT',
         body: data,
         credentials: "include"
@@ -43,6 +43,7 @@ const EditPost = () => {
     if(response.ok){
         setRedirect(true);
     }
+    console.log(response);
   }
 
   if (redirect) {

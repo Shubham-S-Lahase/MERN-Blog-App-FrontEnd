@@ -1,7 +1,7 @@
 .container {
   display: grid;
   grid-template-columns: 0.3fr 1.7fr;
-  grid-template-rows: 0.4fr 2.4fr 0.2fr;
+  grid-template-rows: 0.3fr 2.5fr 0.2fr;
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
@@ -48,4 +48,5 @@
 
 .Blogs {
   grid-area: Blogs;
+  overflow-y: scroll;
 }

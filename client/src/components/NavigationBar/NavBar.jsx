@@ -9,7 +9,7 @@ import "./NavBar.css";
 const NavBar = () => {
   const {userInfo,setUserInfo} = useContext(UserContext);
   useEffect(() => {
-    fetch("http://localhost:4000/api/user/Profile", {
+    fetch("https://blogger-trigger-api.onrender.com/api/user/Profile", {
       credentials: "include",
     }).then((response) => {
       response.json().then((userInfo) => {
@@ -19,7 +19,7 @@ const NavBar = () => {
   }, []);
 
   function logout(){
-    fetch('http://localhost:4000/api/user/Logout',{
+    fetch('https://blogger-trigger-api.onrender.com/api/user/Logout',{
       credentials: "include",
       method: 'POST'
     });

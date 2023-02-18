@@ -25,18 +25,23 @@
     backface-visibility: hidden;
 }
 .flip-card-front h2{
-    margin-top: 8vh;
-    font-size: 200%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 6vh;
+    margin-bottom: 5px;
     color:aqua;
 }
 .flip-card-front .p1{
-    font-size: 150%;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
     color:chartreuse;
 }
 .flip-card-front .p2{
-    font-size: 150%;
+    font-size: 20px;
     color:darkgoldenrod;
-    
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 10px;
 }
 .flip-card-front{
     background-color: rgba(14, 3, 77, 0.868);

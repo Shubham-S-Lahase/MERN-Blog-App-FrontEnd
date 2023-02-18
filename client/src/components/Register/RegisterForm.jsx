@@ -11,7 +11,7 @@ const RegisterForm = () => {
 
   const register = async (e) => {
     e.preventDefault();
-      const response = await fetch('http://localhost:4000/api/user/Register',  {
+      const response = await fetch('https://blogger-trigger-api.onrender.com/api/user/Register',  {
       method: 'POST',
       body: JSON.stringify({username, password}),
       headers: { 'Content-Type':'application/json' }
