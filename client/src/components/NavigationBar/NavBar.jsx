@@ -20,7 +20,7 @@ const NavBar = () => {
 
   function logout(){
     fetch('https://blogger-trigger-api.onrender.com/api/user/Logout',{
-      credentials: "include",
+      // credentials: "include",
       method: 'POST'
     });
     setUserInfo(null);
