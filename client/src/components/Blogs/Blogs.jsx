@@ -7,7 +7,7 @@ import "./Blogs.css";
 const Blogs = () => {
 const [posts, setPosts] = useState([]);
 useEffect(() => {
-  fetch('http://localhost:4000/api/user/get-post').then(response => {
+  fetch('https://blogger-trigger-api.onrender.com/api/user/get-post').then(response => {
     response.json().then(posts => {
       setPosts(posts);
       console.log(posts);
