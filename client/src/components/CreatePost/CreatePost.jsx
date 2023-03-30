@@ -23,7 +23,7 @@ const CreatePost = () => {
     const response = await fetch("https://blogger-trigger-api.onrender.com/api/user/Post", {
       method: "POST",
       body: data,
-      // credentials: "include",
+      credentials: "include",
     });
     if (response.ok) {
       setRedirect(true);

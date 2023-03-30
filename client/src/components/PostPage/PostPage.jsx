@@ -56,7 +56,7 @@ const PostPage = () => {
         </div>
         <div className="post-image">
           <img
-            src={`http://localhost:4000/${postInfo.cover}`}
+            src={`https://blogger-trigger-api.onrender.com/${postInfo.cover}`}
             alt="post-image"
           />
         </div>
